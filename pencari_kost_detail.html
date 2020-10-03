@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/user.css">
+  <link rel="stylesheet" href="assets/css/foto.css">
+  <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
+  <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+  <link rel="stylesheet" href="assets/css/Hero-Technology.css">
+  <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">MARKOST </a>
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      </div>
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="nav navbar-nav">
+          <li role="presentation"><a href="pencari_dashboard.html">Dashboard </a></li>
+          <li role="presentation"><a href="pencari_cart.html">Cart </a></li>
+          <li role="presentation"><a href="pencari_profil.html">Profil </a></li>
+          <li role="presentation"><a href="user_dashboard.html">Logout </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row product">
+      <div class="col-md-5 col-md-offset-0"><img class="img-responsive" src="assets/img/4.jpg"></div>
+      <div class="col-md-7">
+        <h2>Kamar Kost Putri</h2>
+        <p>Sed mollis, urna eu tempus facilisis, diam tellus aliquam tortor, et vestibulum ante quam non justo. Nullam luctus rutrum mattis. Maecenas in pharetra mi, vel mollis odio. Morbi non mauris massa. </p>
+        <select>
+          <option value selected>Chose Your Size</option>
+          <option value="xxl">XXL</option>
+          <option value="xl">XL</option>
+          <option value="m">M</option>
+          <option value="s">S</option>
+        </select>
+        <h3>Rp.600000/bulan </h3>
+        <a class="btn btn-primary" role="button" href="pencari_cart.html">Add to cart</a>
+      </div>
+    </div>
+    <div class="page-header">
+      <h3>Product Details</h3></div>
+      <p>Sed mollis, urna eu tempus facilisis, diam tellus aliquam tortor, et vestibulum ante quam non justo. Nullam luctus rutrum mattis. Maecenas in pharetra mi, vel mollis odio. Morbi non mauris massa. </p>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Kriteria </th>
+              <th>Bobot </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Harga </td>
+              <td>&gt;500000 </td>
+            </tr>
+            <tr>
+              <td>Jarak </td>
+              <td>1 km-5 km </td>
+            </tr>
+            <tr>
+              <td>Luas Kamar</td>
+              <td>3 x 4 m</td>
+            </tr>
+            <tr>
+              <td>Fasilitas Kost</td>
+              <td>Kasur, Lemari, Wifi, Parkir motorl</td>
+            </tr>
+            <tr>
+              <td>Kondisi Bangunan</td>
+              <td>Bersih, baru dicat ulang, 1 lokasi denganpemilik, bangunan arsitektur modern </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+      <h2 style="text-align:center">Foto Detail</h2>
+
+      <div class="row">
+        <div class="column">
+          <img src="assets/img/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="assets/img/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="assets/img/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="assets/img/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="assets/img/1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="assets/img/2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="assets/img/3.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="assets/img/4.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="column">
+            <img class="demo cursor" src="assets/img/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Kamar Mandi">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="assets/img/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Parkiran">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="assets/img/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Dapur">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="assets/img/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Lain-lain">
+          </div>
+        </div>
+      </div> 
+
+      <div class="page-header">
+        <h3>Reviews<button class="btn btn-primary write-review" type="button">Write a review</button></h3></div>
+        <div class="media">
+          <div class="media-body">
+            <h4>Love this!</h4>
+            <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non vestibulum libero posuere. Vivamus pharetra leo non nulla egestas, nec malesuada orci finibus. </p>
+            <p><span class="reviewer-name"><strong>John Doe</strong></span><span class="review-date">7 Oct 2015</span></p>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-body">
+            <h4>Fantastic product</h4>
+            <div><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nisl ac diam feugiat, non vestibulum libero posuere. Vivamus pharetra leo non nulla egestas, nec malesuada orci finibus. </p>
+            <p><span class="reviewer-name"><strong>Jane Doe</strong></span><span class="review-date">7 Oct 2015</span></p>
+          </div>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <div class="container">
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+              <h5>Markost © 2020</h5></div>
+              <div class="col-sm-6 social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+            </div>
+          </div>
+        </footer>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+          function openModal() {
+            document.getElementById("myModal").style.display = "block";
+          }
+
+          function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+          }
+
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+              }
+            </script>
+          </body>
+
+          </html>
